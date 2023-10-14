@@ -1,1 +1,2 @@
-My name is Valeria Demina. I'm student of M33051 group. My project is clothing brand website.
+![image](https://github.com/lerchonok/web-programming/assets/91780226/debbda03-52dc-408d-86fd-65b2c3fb1dc4)
+
