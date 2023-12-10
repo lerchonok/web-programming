@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cssoutline-prototype-safe.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/cssWomenSide.css">
+    <title>VITMONTS Wishlist</title>
+    <style>
+        body {
+            background-image: url('assets/background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        section {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+        .creatingWishlist{
+            margin-top: 10px;
+        }
+        .title_block{
+            margin-outside: 100px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="title_block">
+        <h1><strong>VITMONTS Wishlist</strong></h1>
+        <button class="h2" type="button">women</button> <button class="h2" type="button">men</button>
+    </div>
+</header>
+
+<section class="creatingWishlist">
+    <h2>Create Your Wishlist</h2>
+    <form id="wishlistForm">
+        <label for="holidayName">Holiday Name:</label>
+        <input type="text" id="holidayName" name="holidayName" required>
+
+        <label for="clothing">Clothing Wishlist:</label>
+        <input type="text" id="clothing" name="clothing" required>
+
+        <label for="hasOutfit">Has Outfit:</label>
+        <input type="checkbox" id="hasOutfit" name="hasOutfit">
+
+        <button type="button" onclick="addToWishlist()">Add to Wishlist</button>
+    </form>
+
+    <table id="wishlistTable">
+        <thead>
+        <tr>
+            <th>Holiday</th>
+            <th>Clothing</th>
+            <th>Has Outfit</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</section>
+
+<script src="js/script.js"></script>
+<script src="js/Women.js"></script>
+</body>
+</html>

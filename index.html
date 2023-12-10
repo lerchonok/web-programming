@@ -2,93 +2,25 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cssoutline-prototype-safe.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>VITMONTS</title>
+    <script src="js/addEventListener.js"></script>
 </head>
+
 <body>
 <div class="wrapper">
 <header>
     <div class="title_block">
     <h1><strong>VITMONTS</strong></h1>
-        <h2>women</h2>
-        <h2>men</h2>
+        <button class="h2" type="button">women</button> <button class="h2" type="button">men</button>
     </div>
-    <img src="https://private-user-images.githubusercontent.com/91780226/285583252-45f9b586-7b68-41d7-9c86-7150930ab4f5.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MDA5MTQ4NTUsIm5iZiI6MTcwMDkxNDU1NSwicGF0aCI6Ii85MTc4MDIyNi8yODU1ODMyNTItNDVmOWI1ODYtN2I2OC00MWQ3LTljODYtNzE1MDkzMGFiNGY1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzExMjUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMxMTI1VDEyMTU1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMwNDUxNDdiYWQ3ZDMxZjBmNjYwYmRkYWYwZGVlZjZiYjExZTRmOTU2OWZjM2I5Zjc2NDU0MmYzZGJkMjg5NjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.oSWSjEYnMJNeN-yvE8uzEGap1F-yb6wiX2AzXFlt3a4"
-         width="100%" height="500" alt="">
+    <img class="image-container" src="./assets/logo.png"
+         width="100%" height="auto" alt="">
 </header>
 <main>
-    <div class="hover-panel">
-        <div class="hover-panel__content">
-            <div class="ui-button theme-button" id="theme-button">Change theme</div>
-            <div class="ui-button" id="small-button">Small UI</div>
-            <div class="ui-button" id="normal-button">Normal UI</div>
-            <div class="ui-button" id="big-button">Big UI</div>
-        </div>
-    </div>
     <h3>VITMONTS - это международный бренд, отражающий славянские ценности отношения к жизни и <span><i>одежде</i></span>.</h3>
-<!--    <div class="block2">-->
-<!--    <nav>-->
-<!--        <a>Лучшие подборки для женщин</a>-->
-<!--    </nav>-->
-<!--    <nav>-->
-<!--        <a>Лучшие подборки для мужчин</a>-->
-<!--    </nav>-->
-<!--    </div>-->
-<!--    <table>-->
-<!--        <caption>Таблица</caption>-->
-<!--        <tr>-->
-<!--            <th>In Millions of USD (except for per share items)</th>-->
-<!--            <th>52 weeks ending 2012-09-29</th>-->
-<!--            <th>52 weeks ending 2011-09-24</th>-->
-<!--            <th>52 weeks ending 2010-09-25</th>-->
-<!--            <th>52 weeks ending 2009-09-26</th>-->
-<!--        </tr>-->
-<!--            <th>Revenue</th>-->
-<!--            <th>156,508/00</th>-->
-<!--            <th>108,249.00</th>-->
-<!--            <th>65,225.00</th>-->
-<!--            <th>42,905.00</th>-->
-<!--        <tr>-->
-<!--            <th>Other Revenue, Total</th>-->
-<!--            <th>-</th>-->
-<!--            <th>-</th>-->
-<!--            <th>-</th>-->
-<!--            <th>-</th>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--            <th>Total Revenue</th>-->
-<!--            <th>156,508/00</th>-->
-<!--            <th>108,249.00</th>-->
-<!--            <th>65,225.00</th>-->
-<!--            <th>42,905.00</th>-->
-<!--        </tr>-->
-<!--    </table>-->
-    <div class="table1">
-        <div>In Millions of USD (except for per share items)</div>
-        <div>52 weeks ending 2012-09-29</div>
-        <div>52 weeks ending 2011-09-24</div>
-        <div>52 weeks ending 2010-09-25</div>
-        <div>52 weeks ending 2009-09-26</div>
-
-        <div>Revenue</div>
-        <div>156,508/00</div>
-        <div>108,249.00</div>
-        <div>65,225.00</div>
-        <div>42,905.00</div>
-
-        <div>Other Revenue, Total</div>
-        <div>-</div>
-        <div>-</div>
-        <div>-</div>
-        <div>-</div>
-
-        <div>Total Revenue</div>
-        <div>156,508/00</div>
-        <div>108,249.00</div>
-        <div>65,225.00</div>
-        <div>42,905.00</div>
-    </div>
 </main>
 <footer class="site-footer">
     <div class="footer_block">
@@ -96,5 +28,6 @@
     </div>
 </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
