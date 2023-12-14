@@ -55,9 +55,9 @@ body {
 h1 {
     font-family: serif;
     text-align: start;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 60px;
     color: #3a3a3a;
     display: grid;
     gap: 7em;
@@ -106,11 +106,11 @@ p {
     color: ghostwhite;
 }
 
-button {
+.button {
     margin-top: 10px;
     padding: 8px;
-    background-color: #ffffff;
-    color: #fff;
+    background-color: ghostwhite;
+    color: #555555;
     border: none;
     cursor: pointer;
 }
@@ -143,3 +143,19 @@ img {
         display: none;
     }
 }
+
+/* Стили для активного состояния */
+.button.active {
+    background-color: #ff0000; /* Замените на ваш цвет */
+    color: cornflowerblue; /* Замените на ваш цвет */
+}
+
+.button.inactive {
+    color: #999; /* Измените цвет по вашему вкусу */
+}
+
+/* Стили для hover state */
+.button:hover {
+    text-decoration: underline; /* Или другие стили, которые вы хотите применить при наведении */
+}
+
