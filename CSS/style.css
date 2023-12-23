@@ -144,18 +144,30 @@ img {
     }
 }
 
-/* Стили для активного состояния */
-.button.active {
-    background-color: #ff0000; /* Замените на ваш цвет */
-    color: cornflowerblue; /* Замените на ваш цвет */
-}
-
-.button.inactive {
-    color: #999; /* Измените цвет по вашему вкусу */
-}
-
-/* Стили для hover state */
 .button:hover {
     text-decoration: underline; /* Или другие стили, которые вы хотите применить при наведении */
+}
+
+#album-container {
+    position: relative;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Добавьте свою анимацию или используйте готовую GIF-анимацию */
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 

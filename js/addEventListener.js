@@ -11,30 +11,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // Получаем текущий путь страницы
     var currentPath = window.location.pathname;
 
-    // Находим все кнопки меню
-    var menuButtons = document.querySelectorAll(".button");
+    // Находим все ссылки меню
+    var menuLinks = document.querySelectorAll(".h2");
 
-    // Проходим по всем кнопкам меню
-    menuButtons.forEach(function (button) {
-        // Получаем путь из атрибута data-path
-        var buttonPath = button.getAttribute("data-path");
+    // Проходим по всем ссылкам меню
+    menuLinks.forEach(function (link) {
+        // Получаем путь из атрибута href
+        var linkPath = link.getAttribute("href");
 
-        // Проверяем, соответствует ли текущий путь кнопке меню
-        if (currentPath === buttonPath) {
-            button.classList.add("active");
+        // Проверяем, соответствует ли текущий путь ссылке меню
+        if (currentPath === linkPath) {
+            link.classList.add("active");
         } else {
-            button.classList.add("inactive");
+            link.classList.add("inactive");
         }
 
         // Добавляем обработчик события для состояния hover
-        button.addEventListener("mouseover", function () {
-            button.classList.remove("inactive");
+        link.addEventListener("mouseover", function () {
+            link.classList.remove("inactive");
         });
 
         // Добавляем обработчик события для состояния hover
-        button.addEventListener("mouseout", function () {
-            if (currentPath !== buttonPath) {
-                button.classList.add("inactive");
+        link.addEventListener("mouseout", function () {
+            if (currentPath !== linkPath) {
+                link.classList.add("inactive");
             }
         });
     });
